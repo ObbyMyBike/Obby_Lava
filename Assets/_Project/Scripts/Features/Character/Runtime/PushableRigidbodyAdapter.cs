@@ -12,7 +12,5 @@ public class PushableRigidbodyAdapter : MonoBehaviour, IPushable
     public void TryPush(Vector3 force)
     {
         _rigidbody.AddForce(force, ForceMode.Impulse);
-        
-        Debug.Log($"[TestPushable] {name} was pushed with force {force}");
     }
 }
