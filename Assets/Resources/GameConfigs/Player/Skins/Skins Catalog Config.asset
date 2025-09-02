@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51a5104b909474fbe505064d58cfe45, type: 3}
+  m_Name: Skins Catalog Config
+  m_EditorClassIdentifier: 
+  _skins:
+  - Id: 0
+    ChildNameUnderPlayerModel: Default
+    RewardedAdvId: default
+    DisplayNameLocKey: skin.default
+    PickupVisualPrefab: {fileID: 2071111318170553217, guid: 1b823f073e2d25847bdab99d1034a57c, type: 3}
+  - Id: 1
+    ChildNameUnderPlayerModel: Knight
+    RewardedAdvId: default
+    DisplayNameLocKey: skin.knight
+    PickupVisualPrefab: {fileID: 7564007067940620505, guid: 36494a4edaf7924489f309c8879b7eaf, type: 3}
+  - Id: 2
+    ChildNameUnderPlayerModel: PlagueDoctor
+    RewardedAdvId: default
+    DisplayNameLocKey: skin.plague_doctor
+    PickupVisualPrefab: {fileID: 2660789801716298089, guid: 6966b1edb76014f4c946dfea3c1a7148, type: 3}
+  - Id: 3
+    ChildNameUnderPlayerModel: Ranger
+    RewardedAdvId: default
+    DisplayNameLocKey: skin.ranger
+    PickupVisualPrefab: {fileID: 405966628637612529, guid: 435203ea950d9f542b5f516968fb0526, type: 3}
+  - Id: 4
+    ChildNameUnderPlayerModel: Mage
+    RewardedAdvId: default
+    DisplayNameLocKey: skin.mage
+    PickupVisualPrefab: {fileID: 4939471248026969489, guid: 8ed9256dd7b3a3d42b74048d8391178d, type: 3}

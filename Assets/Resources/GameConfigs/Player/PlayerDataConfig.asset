@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98f7e16b65f4ee1bf55e0b068ff9d1f, type: 3}
+  m_Name: PlayerDataConfig
+  m_EditorClassIdentifier: 
+  MoveSpeed: 5
+  JumpForce: 2.5
+  Gravity: -35
+  DashDistance: 5
+  DashDuration: 0.5
+  DashCooldown: 2
+  PushForce: 10
+  PushRange: 1.5
+  PushRadius: 0.5
+  PushCooldown: 1
+  RotationSpeed: 720

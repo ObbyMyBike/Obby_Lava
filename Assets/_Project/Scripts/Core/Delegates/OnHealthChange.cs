@@ -1,0 +1,1 @@
+public delegate void OnHealthChange(int current, int max);

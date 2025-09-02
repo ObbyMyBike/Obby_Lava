@@ -1,0 +1,1 @@
+public delegate void OnLavaHeightChange(float height);
