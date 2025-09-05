@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayerDataConfig", menuName = "Configs/PlayerData")]
@@ -30,15 +31,15 @@ public class PlayerDataConfig : ScriptableObject
     [Header("Rotation Settings")]
     [SerializeField] private float _rotationSpeed = 720f;
     
-    [Header("Climb Settings")]
-    [SerializeField] private float _climbSpeed = 2.5f;
+    [NonSerialized] private float _runtimeMoveSpeedMultiplier = 1f;
+    [NonSerialized] private float _runtimeJumpForceMultiplier = 1f;
     
     public int StartingGold => _startingGold;
     public int MaxHealth => _maxHealth;
     public float SecondsToDieInLava => _secondsToDieInLava;
     public float RegenPerSecondOutsideLava => _regenPerSecondOutsideLava;
-    public float MoveSpeed => _moveSpeed;
-    public float JumpForce => _jumpForce;
+    public float MoveSpeed => _moveSpeed * _runtimeMoveSpeedMultiplier;
+    public float JumpForce => _jumpForce * _runtimeJumpForceMultiplier;
     public float Gravity => _gravity;
     public float DashDistance => _dashDistance;
     public float DashDuration => _dashDuration;
@@ -48,5 +49,12 @@ public class PlayerDataConfig : ScriptableObject
     public float PushRadius => _pushRadius;
     public float PushCooldown => _pushCooldown;
     public float RotationSpeed => _rotationSpeed;
-    public float ClimbSpeed => _climbSpeed;
+    
+    public void OverrideMoveSpeedMultiplier(float multiplier) => _runtimeMoveSpeedMultiplier = Mathf.Max(0.01f, multiplier);
+
+    public void ResetMoveSpeedMultiplier() => _runtimeMoveSpeedMultiplier = 1f;
+
+    public void OverrideJumpForceMultiplier(float multiplier) => _runtimeJumpForceMultiplier = Mathf.Max(0.01f, multiplier);
+
+    public void ResetJumpForceMultiplier() => _runtimeJumpForceMultiplier = 1f;
 }

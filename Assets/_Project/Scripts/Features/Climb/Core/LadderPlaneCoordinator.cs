@@ -3,13 +3,11 @@ using UnityEngine;
 public class LadderPlaneCoordinator
 {
     private readonly CharacterController controller;
-    private readonly Transform playerTransform;
     private readonly LadderSettingsConfig config;
 
-    public LadderPlaneCoordinator(CharacterController controller, Transform playerTransform, LadderSettingsConfig config)
+    public LadderPlaneCoordinator(CharacterController controller, LadderSettingsConfig config)
     {
         this.controller = controller;
-        this.playerTransform = playerTransform;
         this.config = config;
     }
 
@@ -19,7 +17,7 @@ public class LadderPlaneCoordinator
         faceDirection.y = 0f;
 
         if (faceDirection.sqrMagnitude > 1e-4f)
-            playerTransform.rotation = Quaternion.LookRotation(faceDirection);
+            controller.transform.rotation = Quaternion.LookRotation(faceDirection);
     }
 
     public void SnapToDesiredPlaneOffset(Transform ladderFacing)

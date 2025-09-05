@@ -7,7 +7,7 @@ public class DesktopInput : IInput, ITickable
     public event OnPressed OnDashPressed;
     public event OnPressed OnPushPressed;
 
-    private readonly IMainCamera mainCamera;
+    private readonly FollowCameraCinemachineBinder mainCamera;
     private readonly InputConfig inputConfig;
     private readonly string xInputName;
     private readonly string yInputName;
@@ -15,7 +15,7 @@ public class DesktopInput : IInput, ITickable
     private Vector2 _inputDirection;
     private Vector3 _moveDirection;
 
-    public DesktopInput(IMainCamera mainCamera, InputConfig inputConfig)
+    public DesktopInput(FollowCameraCinemachineBinder mainCamera, InputConfig inputConfig)
     {
         this.mainCamera = mainCamera;
         this.inputConfig = inputConfig;
@@ -30,19 +30,19 @@ public class DesktopInput : IInput, ITickable
 
     private void HandleInput()
     {
-        float x = Input.GetAxis(this.xInputName);
-        float y = Input.GetAxis(this.yInputName);
+        float x = Input.GetAxis(xInputName);
+        float y = Input.GetAxis(yInputName);
         
         _inputDirection = new Vector2(x, y);
-        _moveDirection = this.mainCamera.ForwardDirection * y + this.mainCamera.RightDirection * x;
+        _moveDirection = mainCamera.ForwardDirection * y + mainCamera.RightDirection * x;
 
-        if (Input.GetKeyDown(this.inputConfig.JumpButton))
+        if (Input.GetKeyDown(inputConfig.JumpButton))
             OnJumpPressed?.Invoke();
 
-        if (Input.GetKeyDown(this.inputConfig.DashButton))
+        if (Input.GetKeyDown(inputConfig.DashButton))
             OnDashPressed?.Invoke();
 
-        if (Input.GetKeyDown(this.inputConfig.PushButton))
+        if (Input.GetKeyDown(inputConfig.PushButton))
             OnPushPressed?.Invoke();
     }
 }

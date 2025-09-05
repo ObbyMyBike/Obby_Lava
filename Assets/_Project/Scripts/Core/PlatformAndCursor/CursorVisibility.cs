@@ -1,18 +1,18 @@
 using UnityEngine;
 
-public class CursorVisibility : ICursorVisible
+public class CursorVisibility
 {
     private const CursorLockMode LOCK_MODE_UI = CursorLockMode.None;
     private const CursorLockMode LOCK_MODE_GAMEPLAY = CursorLockMode.Locked;
 
-    private readonly IPlatform platform;
+    private readonly PlatformDefinition platform;
 
-    public CursorVisibility(IPlatform platform)
+    public CursorVisibility(PlatformDefinition platform)
     {
         this.platform = platform;
     }
 
-    void ICursorVisible.ShowCursor()
+    public void ShowCursor()
     {
         if (platform.IsMobile)
             return;
@@ -21,7 +21,7 @@ public class CursorVisibility : ICursorVisible
         Cursor.lockState = LOCK_MODE_UI;
     }
 
-    void ICursorVisible.HideCursor()
+    public void HideCursor()
     {
         if (platform.IsMobile)
             return;

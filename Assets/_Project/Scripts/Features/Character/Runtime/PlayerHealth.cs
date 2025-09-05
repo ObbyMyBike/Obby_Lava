@@ -59,15 +59,39 @@ public class PlayerHealth
         }
     }
 
+    public void RestoreToMax()
+    {
+        if (CurrentHealth == MaxHealth && Mathf.Approximately(_preciseHealth, MaxHealth))
+            return;
+
+        _preciseHealth = MaxHealth;
+        CurrentHealth = MaxHealth;
+        
+        OnHealthChanged?.Invoke(CurrentHealth, MaxHealth);
+    }
+    
+    public void ForceKill()
+    {
+        if (IsDead)
+            return;
+
+        _preciseHealth = MIN_HEALTH;
+        CurrentHealth = MIN_HEALTH;
+        
+        OnHealthChanged?.Invoke(CurrentHealth, MaxHealth);
+        OnDied?.Invoke();
+    }
+
     public void SetMaxHealth(int maxHealth, bool fill = true)
     {
         MaxHealth = Mathf.Max(1, maxHealth);
 
         if (fill)
             CurrentHealth = MaxHealth;
-        
+
         CurrentHealth = Mathf.Clamp(CurrentHealth, MIN_HEALTH, MaxHealth);
-        
+        _preciseHealth = CurrentHealth;
+
         OnHealthChanged?.Invoke(CurrentHealth, MaxHealth);
     }
 }

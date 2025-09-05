@@ -10,7 +10,7 @@ public class LavaFeatureInstaller : MonoInstaller
 
     public override void InstallBindings()
     {
-        Container.Bind<LavaProgressionConfig>().FromScriptableObject(_progressionConfig).AsSingle();
+        Container.Bind<LavaProgressionConfig>().FromInstance(_progressionConfig).AsSingle();
         Container.Bind<ILavaSurface>().FromInstance(_lavaSurfaceView).AsSingle();
         
         Container.BindInterfacesAndSelfTo<LavaProgressionFlow>().AsSingle();

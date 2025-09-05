@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MainCameraProvider : ICameraProvider
+public class MainCameraProvider
 {
     private readonly Transform cameraTransform;
 
@@ -9,5 +9,5 @@ public class MainCameraProvider : ICameraProvider
         this.cameraTransform = cameraTransform;
     }
 
-    Transform ICameraProvider.CameraTransform => cameraTransform;
+    public Transform CameraTransform => cameraTransform;
 }

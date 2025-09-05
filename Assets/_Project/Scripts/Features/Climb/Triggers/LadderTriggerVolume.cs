@@ -7,15 +7,15 @@ public class LadderTriggerVolume : MonoBehaviour
     [SerializeField] private Transform _facing;
 
     private Collider _collider;
-    private ILadderClimbService _climbService;
+    private LadderClimb _climb;
     private LadderSettingsConfig _config;
 
     private Transform Facing => _facing != null ? _facing : transform;
 
     [Inject]
-    private void Construct(ILadderClimbService climbService, LadderSettingsConfig config)
+    private void Construct(LadderClimb climb, LadderSettingsConfig config)
     {
-        _climbService = climbService;
+        _climb = climb;
         _config = config;
     }
 
@@ -27,7 +27,7 @@ public class LadderTriggerVolume : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (_climbService == null || !_climbService.CanEnterNow || _climbService.IsClimbing)
+        if (_climb == null || !_climb.CanEnterNow || _climb.IsClimbing)
             return;
         
         if (!other.TryGetComponent(out Player player))
@@ -39,16 +39,16 @@ public class LadderTriggerVolume : MonoBehaviour
         if (!HasEnterIntent(move, Facing, out _) || !IsCloseToLadderPlane(other.transform.position, Facing, out _))
             return;
         
-        _climbService.TryEnter(Facing, _collider);
+        _climb.TryEnter(Facing, _collider);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (_climbService == null || !_climbService.IsClimbing)
+        if (_climb == null || !_climb.IsClimbing)
             return;
 
         if (other.TryGetComponent(out Player _))
-            _climbService.TryExit(Facing);
+            _climb.TryExit(Facing);
     }
 
     private bool HasEnterIntent(Vector3 moveDirWorld, Transform facing, out float into)

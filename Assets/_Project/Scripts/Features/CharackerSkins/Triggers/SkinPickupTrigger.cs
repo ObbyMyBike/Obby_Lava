@@ -18,16 +18,16 @@ public class SkinPickupTrigger : MonoBehaviour
     private readonly float autoRotationSpeedSkinPerSecond = DEFAULT_AUTO_ROTATION_SPEED;
 
     private SkinsCatalogConfig _catalog;
-    private IRewardedAdService _rewarded;
-    private ISkinsSaveRepository _repository;
-    private ISkinUnlockAndApply _unlockApply;
+    private YandexGamesRewardedAd _rewarded;
+    private YGSkinsSaveRepository _repository;
+    private SkinUnlockAndApply _unlockApply;
     private IDisposable _fillSubscription;
     
     private Collider _collider;
     private GameObject _spawnedVisual;
 
     [Inject]
-    public void Construct(IRewardedAdService rewarded, ISkinsSaveRepository repository, ISkinUnlockAndApply unlockApply, SkinsCatalogConfig catalog)
+    public void Construct(YandexGamesRewardedAd rewarded, YGSkinsSaveRepository repository, SkinUnlockAndApply unlockApply, SkinsCatalogConfig catalog)
     {
         _rewarded = rewarded;
         _repository = repository;
@@ -42,27 +42,45 @@ public class SkinPickupTrigger : MonoBehaviour
         
         if (_visualAnchor == null)
             _visualAnchor = transform;
-        
+    }
+    
+    private void OnDisable()
+    {
+        spinner.StopSpin();
+    }
+    
+    private void Start()
+    {
+        if (_repository == null || _catalog == null || _rewarded == null || _unlockApply == null)
+        {
+            Debug.LogWarning("[SkinPickupTrigger] Not injected yet.");
+            
+            return;
+        }
+
         if (_repository.HasSkin(_skinId))
         {
             gameObject.SetActive(false);
             
             return;
         }
-        
-        TrySpawnPickupVisual();
 
+        TrySpawnPickupVisual();
+        
         spinner.StartSpin(_visualAnchor, autoRotationSpeedSkinPerSecond);
-        _progressView.Hide();
+        
+        if (_progressView != null)
+            _progressView.Hide();
     }
 
     private void OnDestroy()
     {
+        spinner.StopSpin();
+        
         if (_spawnedVisual != null)
-        {
             Destroy(_spawnedVisual);
-            _spawnedVisual = null;
-        }
+        
+        _spawnedVisual = null;
     }
     
     private void OnTriggerEnter(Collider other)
@@ -87,10 +105,10 @@ public class SkinPickupTrigger : MonoBehaviour
         _progressView.Show();
 
         _fillSubscription = Observable.EveryUpdate().Scan(0f, (acc, _) => acc + Time.deltaTime)
-            .TakeWhile(time => time < _fillSeconds).Do(time => _progressView.SetProgress(time / _fillSeconds))
+            .TakeWhile(time => time < _fillSeconds).Do(time => _progressView?.SetProgress(time / _fillSeconds))
             .LastOrDefault().Subscribe(_ =>
             {
-                _progressView.SetProgress(1f);
+                _progressView?.SetProgress(1f);
                 TryShowRewardedAndGrant();
             });
     }
@@ -98,8 +116,8 @@ public class SkinPickupTrigger : MonoBehaviour
     private void ResetFill()
     {
         _fillSubscription?.Dispose();
-        _progressView.SetProgress(0f);
-        _progressView.Hide();
+        _progressView?.SetProgress(0f);
+        _progressView?.Hide();
     }
 
     private void TryShowRewardedAndGrant()

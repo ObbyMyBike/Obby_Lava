@@ -1,6 +1,6 @@
 public enum ItemType
 {
-    AutoPushNPC,
+    AutoPush,
     HighJump,
     TrackingLine,
     ThreeCheckpoints,

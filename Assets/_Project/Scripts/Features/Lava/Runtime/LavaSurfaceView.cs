@@ -17,7 +17,10 @@ public class LavaSurfaceView : MonoBehaviour, ILavaSurface
             _surfaceTransform = transform;
         
         gameObject.name = SURFACE_OBJECT_NAME;
-        _baseLocalY = _surfaceTransform.localPosition.y;
+        
+        Vector3 transformPosition = _surfaceTransform.position;
+        transformPosition.y = _baseY;
+        _surfaceTransform.position = transformPosition;
     }
 
     void ILavaSurface.ApplyHeight(float heightFromBaseY)
@@ -28,10 +31,17 @@ public class LavaSurfaceView : MonoBehaviour, ILavaSurface
         scale.y = thickness / UNIT_MESH_Y;
         _surfaceTransform.localScale = scale;
         
-        Vector3 localPosition = _surfaceTransform.localPosition;
-        localPosition.y = _baseLocalY + (thickness * 0.5f);
-        _surfaceTransform.localPosition = localPosition;
+        Vector3 transformPosition = _surfaceTransform.position;
+        transformPosition.y = _baseY + (thickness * 0.5f);
+        _surfaceTransform.position = transformPosition;
     }
     
-    public void SetBaseY(float baseY) => _baseY = baseY;
+    public void SetBaseY(float baseY)
+    {
+        _baseY = baseY;
+        
+        Vector3 transformPosition = _surfaceTransform.position;
+        transformPosition.y = _baseY;
+        _surfaceTransform.position = transformPosition;
+    }
 }

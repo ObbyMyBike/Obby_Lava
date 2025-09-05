@@ -1,4 +1,4 @@
-public class PlatformDefinition : IPlatform
+public class PlatformDefinition
 {
     private readonly bool isMobile;
 
@@ -7,5 +7,5 @@ public class PlatformDefinition : IPlatform
         this.isMobile = isMobile;
     }
 
-    bool IPlatform.IsMobile => isMobile;
+    public bool IsMobile => isMobile;
 }

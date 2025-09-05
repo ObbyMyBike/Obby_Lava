@@ -13,13 +13,13 @@ public class MobileInput : MonoBehaviour, IInput
     [SerializeField] private Button _dashButton;
     [SerializeField] private Button _pushButton;
 
-    private IMainCamera _mainCamera;
+    private FollowCameraCinemachineBinder _mainCamera;
     
     private Vector2 _inputDirection;
     private Vector3 _moveDirection;
 
     [Inject]
-    public void Construct(IMainCamera mainCamera) => _mainCamera = mainCamera;
+    public void Construct(FollowCameraCinemachineBinder mainCamera) => _mainCamera = mainCamera;
 
     public Vector2 InputDirection => _inputDirection;
     public Vector3 MoveDirection => _moveDirection;

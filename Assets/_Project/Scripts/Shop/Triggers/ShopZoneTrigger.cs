@@ -8,15 +8,15 @@ public class ShopZoneTrigger : MonoBehaviour
     
     [SerializeField] private bool _closeOnExit = true;
     
-    private ShopSidebarPanelView _shopPanel;
-    private ICursorVisible _cursor;
-    private IPlatform _platform;
+    private ShopPanelView _shopPanel;
+    private CursorVisibility _cursor;
+    private PlatformDefinition _platform;
     
     private Collider _collider;
     private bool _openedByThisZine;
 
     [Inject]
-    private void Construct(ShopSidebarPanelView shopPanel, ICursorVisible cursor, IPlatform platform)
+    private void Construct(ShopPanelView shopPanel, CursorVisibility cursor, PlatformDefinition platform)
     {
         _shopPanel = shopPanel;
         _cursor = cursor;

@@ -5,16 +5,16 @@ public class LavaContactHealthDrain : ITickable
 {
     private const float EPSILON = 0.0001f;
     
-    private readonly CharacterController playerController;
+    private readonly SpawnedPlayerAccessor accessor;
     private readonly ILavaSurface lavaSurface;
     private readonly PlayerHealth health;
     private readonly float secondsToDieInLava;
     private readonly float regenPerSecondOutsideLava;
     private readonly float damagePerSecond;
 
-    public LavaContactHealthDrain(CharacterController playerController, ILavaSurface lavaSurface, PlayerHealth health, float secondsToDieInLava, float regenPerSecondOutsideLava)
+    public LavaContactHealthDrain(SpawnedPlayerAccessor accessor, ILavaSurface lavaSurface, PlayerHealth health, float secondsToDieInLava, float regenPerSecondOutsideLava)
     {
-        this.playerController = playerController;
+        this.accessor = accessor;
         this.lavaSurface = lavaSurface;
         this.health = health;
         this.secondsToDieInLava = Mathf.Max(EPSILON, secondsToDieInLava);
@@ -28,15 +28,20 @@ public class LavaContactHealthDrain : ITickable
         if (health.IsDead)
             return;
 
+        CharacterController controller = accessor.CharacterController;
+        
+        if (controller == null)
+            return;
+        
         float deltaTime = Time.deltaTime;
         
-        if (IsPlayerSubmerged())
+        if (IsPlayerSubmerged(controller))
             health.TryApplyDamage(damagePerSecond * deltaTime);
         else if (regenPerSecondOutsideLava > 0f)
             health.Heal(regenPerSecondOutsideLava * deltaTime);
     }
 
-    private bool IsPlayerSubmerged()
+    private bool IsPlayerSubmerged(CharacterController playerController)
     {
         var feetY = playerController.bounds.min.y;
         var (topY, isOk) = GetLavaTopWorldY();

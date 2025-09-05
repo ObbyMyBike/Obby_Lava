@@ -15,14 +15,14 @@ public class ShopItemSlotView : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _priceText;
     
-    private ItemData _data;
-    private GoldWallet _goldWallet;
+    private ShopItemEntry _entry;
+    private Wallet _wallet;
     private PurchaseButtonAnimator _animator;
 
     [Inject]
-    public void Construct(GoldWallet goldWallet)
+    public void Construct(Wallet wallet)
     {
-        _goldWallet = goldWallet;
+        _wallet = wallet;
     }
 
     private void Awake()
@@ -42,15 +42,14 @@ public class ShopItemSlotView : MonoBehaviour
         trigger.triggers.Add(entryUp);
     }
     
-    public void Setup(ItemData data)
+    public void Setup(ShopItemEntry entry)
     {
-        _data = data;
-        _iconImage.sprite = _data.Icon;
-        _nameText.text = _data.Name;
-        _priceText.text = _data.Price.ToString();
+        _entry = entry;
+        _iconImage.sprite = _entry.Icon;
+        _nameText.text = _entry.Name;
+        _priceText.text = _entry.Price.ToString();
 
         _buyButton.interactable = true;
-        
         _purchasedImage.gameObject.SetActive(false);
     }
 
@@ -63,11 +62,11 @@ public class ShopItemSlotView : MonoBehaviour
     
     private bool TryBuy()
     {
-        if (_goldWallet.TrySpend(_data.Price))
+        if (_wallet.TrySpend(_entry.Price))
         {
             _buyButton.interactable = false;
 
-            OnPurchased?.Invoke(_data.Type);
+            OnPurchased?.Invoke(_entry.Type);
 
             return true;
         }
