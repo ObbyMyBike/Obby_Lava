@@ -7,10 +7,7 @@
         false,
         false
     ],
-    "idSave": 59,
-    "OwnedSkinsIds": [
-        "PlagueDoctor",
-        "Ranger"
-    ],
-    "SelectedSkinId": "Ranger"
+    "idSave": 61,
+    "OwnedSkinsIds": [],
+    "SelectedSkinId": "Default"
 }

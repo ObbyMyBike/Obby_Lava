@@ -23,7 +23,14 @@ public class SimpleGameObjectPool
     public GameObject Get()
     {
         GameObject instance = stack.Count > 0 ? stack.Pop() : Object.Instantiate(prefab, parent);
-        instance.SetActive(true);
+        
+        return instance;
+    }
+    
+    public GameObject GetInactive()
+    {
+        GameObject instance = stack.Count > 0 ? stack.Pop() : Object.Instantiate(prefab, parent);
+        instance.SetActive(false);
         
         return instance;
     }

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5371d0b9034e90acd2fb9ef8c50007, type: 3}
+  m_Name: BotDataConfig 1
+  m_EditorClassIdentifier: 
+  _moveSpeed: 7
+  _rotationSpeed: 9
+  _jumpForce: 2.5
+  _gravity: -35
+  _dashDistance: 1
+  _dashDuration: 1
+  _dashCooldown: 1.2
+  _reachedDistance: 0.35
+  _jumpMinCooldown: 1
+  _failFallDownVelocity: -8
+  _randomFailKickForce: 3.5
+  _minDistanceBetweenBots: 1
+  _separationWeight: 1
+  _groundMask:
+    serializedVersion: 2
+    m_Bits: 128
+  _groundProbeRadius: 0.18
+  _groundProbeDistance: 0.25

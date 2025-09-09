@@ -5,7 +5,6 @@ using Zenject;
 public class DevResetProgressOnKeyPress : ITickable
 {
     private const KeyCode RESET_KEY = KeyCode.X;
-    private const string LOG_RESET_DONE = "[DEV] Saves cleared and scene reloaded.";
 
     private readonly YGGameSaveResetter _resetter;
 
@@ -17,14 +16,13 @@ public class DevResetProgressOnKeyPress : ITickable
     void ITickable.Tick()
     {
         bool isShiftHeld = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+        
         if (isShiftHeld && Input.GetKeyDown(RESET_KEY))
         {
             _resetter.ResetAllSaves();
 
             int currentIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentIndex);
-
-            Debug.Log(LOG_RESET_DONE);
         }
     }
 }

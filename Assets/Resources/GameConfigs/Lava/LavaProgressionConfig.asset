@@ -67,7 +67,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     TargetHeight: 2
-    WaitBeforeCountdownSeconds: 30
+    WaitBeforeCountdownSeconds: 10
     CountdownDurationSeconds: 10
     RiseDurationSeconds: 10
     HoldDurationSeconds: 10

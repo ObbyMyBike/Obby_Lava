@@ -1,7 +1,5 @@
 using UnityEngine;
 
-public delegate void OnUiClicked();
-
 public delegate void OnPressed();
 
 public delegate void OnUsed();
@@ -57,3 +55,11 @@ public delegate void OnClimbSpeedChange(float signedSpeed);
 public delegate void OnClimbStateChange(bool isClimbing);
 
 public delegate void OnPlayerSpawn(Transform playerTransform);
+
+public delegate void OnBotRespawn(BotAgent bot, Transform checkpoint);
+
+public delegate void OnBotCheckpointCollect(BotAgent bot, Transform checkpoint);
+
+public delegate void OnBotHealthChange(int current, int max);
+
+public delegate void OnAgentDie(BotAgent bot);

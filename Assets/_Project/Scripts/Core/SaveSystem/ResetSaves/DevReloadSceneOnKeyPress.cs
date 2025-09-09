@@ -12,7 +12,6 @@ public class DevReloadSceneOnKeyPress : ITickable
         {
             int currentIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentIndex);
-            Debug.Log("[DEV] Scene reloaded without clearing saves.");
         }
     }
 }

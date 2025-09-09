@@ -79,7 +79,8 @@ public class GameplayInstaller : MonoInstaller
         // --- Здоровье/окружение ---
         Container.Bind<PlayerHealth>().AsSingle().WithArguments(_playerDataConfig.MaxHealth, _playerDataConfig.MaxHealth);
         Container.Bind<PlayerHealthBarPanel>().FromComponentInHierarchy().AsSingle().NonLazy();
-        Container.BindInterfacesAndSelfTo<LavaContactHealthDrain>().AsSingle().WithArguments(_playerDataConfig.SecondsToDieInLava, _playerDataConfig.RegenPerSecondOutsideLava).NonLazy();
+        Container.BindInterfacesAndSelfTo<LavaContactHealthDrainSystem>().AsSingle().WithArguments(_playerDataConfig.SecondsToDieInLava, _playerDataConfig.RegenPerSecondOutsideLava).NonLazy();
+        Container.BindInterfacesAndSelfTo<NonPenetrationSystem>().AsSingle().NonLazy();
         
         // --- Лестницы/прыжки/толчки ---
         Container.Bind<LadderSettingsConfig>().FromInstance(_ladderSettings).AsSingle();
