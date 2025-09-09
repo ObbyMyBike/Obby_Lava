@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98f7e16b65f4ee1bf55e0b068ff9d1f, type: 3}
   m_Name: PlayerDataConfig
   m_EditorClassIdentifier: 
-  MoveSpeed: 5
-  JumpForce: 2.5
-  Gravity: -35
-  DashDistance: 5
-  DashDuration: 0.5
-  DashCooldown: 2
-  PushForce: 10
-  PushRange: 1.5
-  PushRadius: 0.5
-  PushCooldown: 1
-  RotationSpeed: 720
+  _startingGold: 100
+  _maxHealth: 100
+  _secondsToDieInLava: 10
+  _regenPerSecondOutsideLava: 0
+  _moveSpeed: 5
+  _jumpForce: 2.5
+  _gravity: -35
+  _dashDistance: 5
+  _dashDuration: 0.5
+  _dashCooldown: 2
+  _pushForce: 10
+  _pushRange: 1.5
+  _pushRadius: 2
+  _pushCooldown: 1
+  _rotationSpeed: 720

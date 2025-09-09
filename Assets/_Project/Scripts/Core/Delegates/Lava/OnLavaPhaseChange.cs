@@ -1,1 +1,0 @@
-public delegate void OnLavaPhaseChange(LavaPhaseType phase, int stepIndex);

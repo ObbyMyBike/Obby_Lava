@@ -1,1 +1,0 @@
-public delegate void OnLavaRiseComplete(float finalHeight);
