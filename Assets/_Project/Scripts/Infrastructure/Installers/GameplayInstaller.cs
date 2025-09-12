@@ -97,7 +97,7 @@ public class GameplayInstaller : MonoInstaller
         Container.Bind<YandexGamesRewardedAd>().AsSingle();
         Container.Bind<YGSkinsSaveRepository>().AsSingle();
         Container.Bind<PlayerSkinApplier>().AsSingle();
-        Container.Bind<ApplySavedSkinOnStart>().AsSingle().NonLazy();
+        Container.BindInterfacesAndSelfTo<ApplySavedSkinOnStart>().AsSingle().NonLazy();
         Container.Bind<SkinUnlockAndApply>().AsSingle();
 
         // --- Dev-хоткеи (опционально) ---

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Zenject;
+using System.Linq;
 
 public class ShopPanelView : MonoBehaviour
 {
@@ -21,15 +22,18 @@ public class ShopPanelView : MonoBehaviour
     private Wallet _wallet;
     private TimedEffectsRunner _timedEffectsRunner;
     private ThreeCheckpointsInventory _threeCheckpointsInventory;
-    
+    private PlayerRespawn _playerRespawn;
+    private SpawnedPlayerAccessor _playerAccessor;
+
     private DiContainer _container;
 
     private Dictionary<ItemType, ShopItemSlotView> _slotsByType;
     private bool _isVisible;
+    private List<CheckpointTrigger> _allCheckpoints;
 
     [Inject]
     public void Construct(Wallet wallet, TimedEffectsRunner timedEffectsRunner, SpawnedPlayerAccessor accessor, DiContainer container, AutoPush autoPush,
-        ShopItemConfig shopItemConfig, ThreeCheckpointsInventory threeCheckpointsInventory)
+        ShopItemConfig shopItemConfig, ThreeCheckpointsInventory threeCheckpointsInventory, PlayerRespawn playerRespawn, SpawnedPlayerAccessor playerAccessor)
     {
         _wallet = wallet;
         _timedEffectsRunner = timedEffectsRunner;
@@ -38,6 +42,9 @@ public class ShopPanelView : MonoBehaviour
         _autoPush = autoPush;
         _shopItemsConfig = shopItemConfig;
         _threeCheckpointsInventory = threeCheckpointsInventory;
+        _playerRespawn = playerRespawn;
+        _playerAccessor = playerAccessor;
+        _allCheckpoints = FindObjectsOfType<CheckpointTrigger>().ToList();
     }
 
     private void Awake()
@@ -205,6 +212,19 @@ public class ShopPanelView : MonoBehaviour
             {
                 _threeCheckpointsInventory.AddPurchasePack();
                 
+                break;
+            }
+
+            case ItemType.Teleport:
+            {
+                    var currentCheckpoint = _playerRespawn.GetCurrentSpawnPoint();
+                    var nextCheckpoint = _allCheckpoints
+                        .OrderBy(checkpoint => checkpoint.transform.position.y)
+                        .First(checkpoint => checkpoint.transform.position.y > currentCheckpoint.position.y);
+                    _playerRespawn.TrySetCheckpoint(nextCheckpoint.transform, nextCheckpoint.transform.position.y);
+                    _playerRespawn.RequestRespawn();
+                    ResetSlot(type);
+                    Hide();
                 break;
             }
 

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
@@ -6,6 +7,9 @@ using Zenject;
 public class BotAgent : MonoBehaviour
 {
     public event OnAgentDie OnDied;
+
+    [SerializeField] private BotNameUI _botNameUI;
+    [SerializeField] private List<GameObject> _skins;    
     
     private BotDataConfig _config;
     private BotHealth _health;
@@ -23,7 +27,7 @@ public class BotAgent : MonoBehaviour
 
     [Inject]
     public void Construct(int uniqueSeed, Transform startSpawnPoint,  BotRespawnDirectory respawnDirectory, BotDataConfig botDataConfig,
-        WaypointPath waypointPath, ActiveBots agentsRegistry, LadderSettingsConfig ladderSettings )
+        WaypointPath waypointPath, ActiveBots agentsRegistry, LadderSettingsConfig ladderSettings, MainCameraProvider mainCameraProvider )
     {
         _config = botDataConfig;
         _uniqueSeed = uniqueSeed;
@@ -44,11 +48,23 @@ public class BotAgent : MonoBehaviour
         _ai.OnDied += HandleAiDied;
         
         _health = new BotHealth(_config.MaxHealth, _config.MaxHealth);
+
+        SetRandomSkin();
+
+        _botNameUI.SetMainCameraProvider(mainCameraProvider);
+        _botNameUI.SetName(BotRandomNamesProvider.GetNextNickname());
     }
     
     public CharacterController Controller => _controller;
     public AnimationPlayback Animation => _animationPlayback;
     public BotHealth Health => _health;
+
+    private void SetRandomSkin()
+    {
+        int randIndex = Random.Range(0, _skins.Count);
+        _skins.ForEach(skin => skin.SetActive(false));
+        _skins[randIndex].SetActive(true);
+    }
 
     private void OnEnable()
     {

@@ -58,7 +58,8 @@ public class ApplySavedSkinOnStart : IInitializable, IDisposable
         if (coroutineRunner == null)
         {
             ApplyNow();
-            
+
+
             return;
         }
 
@@ -67,6 +68,7 @@ public class ApplySavedSkinOnStart : IInitializable, IDisposable
 
     private IEnumerator WaitAndApply()
     {
+
         float time = 0f;
 
         PlayerSkinApplier applier = null;
@@ -87,6 +89,7 @@ public class ApplySavedSkinOnStart : IInitializable, IDisposable
             yield break;
 
         SkinIdType selected = repository.SelectedSkin;
+
 
         applier.ApplySkin(selected);
     }
