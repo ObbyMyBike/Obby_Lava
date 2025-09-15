@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56eb544409a3ce4790f1b34d7bf0ca3, type: 3}
+  m_Name: PlayerDestructorConfig
+  m_EditorClassIdentifier: 
+  _demonstrateTime: 2
+  _configs:
+  - _skinIdType: 0
+    _distructorPrefab: {fileID: 1439572660055586274, guid: 6974300087c50f34f830bae14bf94e3f, type: 3}
+  - _skinIdType: 1
+    _distructorPrefab: {fileID: 3472395192492297909, guid: 65eeaf57ed1015549aaa6fa62d533ad7, type: 3}
+  - _skinIdType: 2
+    _distructorPrefab: {fileID: 7440823097089147563, guid: 6385196572dd03144b025ca2d6483e2d, type: 3}
+  - _skinIdType: 3
+    _distructorPrefab: {fileID: 3664506088791383379, guid: f3376f58215d5fc4fa9f9356388d9248, type: 3}
+  - _skinIdType: 4
+    _distructorPrefab: {fileID: 8780633114289946565, guid: 749d8f7324887f64cbbd86be47c8b6fd, type: 3}

@@ -17,6 +17,7 @@ public class Player : MonoBehaviour, IMoveDirectionProvider
     [SerializeField] private PlayerDataConfig _dataConfig;
     [SerializeField] private TrailRenderer _trailRenderer;
     [SerializeField] private Transform _playerModelRoot;
+    [SerializeField] private PlayerDestructor _destructor;
 
     private IInput _input;
     private LadderClimb _ladder;
@@ -47,7 +48,8 @@ public class Player : MonoBehaviour, IMoveDirectionProvider
     public PlayerDataConfig DataConfig => _dataConfig;
     public PlayerTrailUsed Trail => _trail;
     public Vector3 CurrentMoveDirectionWorld => _currentMoveDirectionWorld;
-    
+    public PlayerDestructor Destructor => _destructor;
+
     Vector3 IMoveDirectionProvider.CurrentMoveDirectionWorld => CurrentMoveDirectionWorld;
 
     private void Awake()

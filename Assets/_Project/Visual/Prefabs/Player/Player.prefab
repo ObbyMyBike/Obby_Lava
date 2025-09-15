@@ -1690,6 +1690,7 @@ GameObject:
   - component: {fileID: 7797509971020083312}
   - component: {fileID: 5229854508274864691}
   - component: {fileID: 2515607791044269783}
+  - component: {fileID: 1624845933176559857}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -1752,6 +1753,7 @@ MonoBehaviour:
   _dataConfig: {fileID: 11400000, guid: 466d2987f23cf94429191ef2df483871, type: 2}
   _trailRenderer: {fileID: 8049881970818881702}
   _playerModelRoot: {fileID: 1643198331944865814}
+  _destructor: {fileID: 1624845933176559857}
 --- !u!143 &5229854508274864691
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1790,6 +1792,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8dab20eb7e4472887e5c48ad207e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1624845933176559857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071111318170553217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20f2874f5be6a542911627dc70924a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _config: {fileID: 11400000, guid: ea58b8b968c7ea14791991c0a1844dc5, type: 2}
 --- !u!1 &2115386099309732225
 GameObject:
   m_ObjectHideFlags: 0

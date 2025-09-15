@@ -9,8 +9,8 @@
     ],
     "idSave": 2,
     "OwnedSkinsIds": [
-        "Knight",
-        "Ranger"
+        "Mage",
+        "PlagueDoctor"
     ],
-    "SelectedSkinId": "Ranger"
+    "SelectedSkinId": "PlagueDoctor"
 }
