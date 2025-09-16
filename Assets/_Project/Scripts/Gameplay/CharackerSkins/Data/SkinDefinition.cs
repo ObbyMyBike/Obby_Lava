@@ -9,4 +9,5 @@ public struct SkinDefinition
     public string RewardedAdvId;
     public string DisplayNameLocKey;
     public GameObject PickupVisualPrefab;
+    public Sprite SkinPortraitSprite;
 }

@@ -38,8 +38,11 @@ public class GameplayInstaller : MonoInstaller
     [Header("Three Checkpoints")]
     [SerializeField] private GameObject _threeCheckpointPrefab;
     [SerializeField] private GameObject _threeCheckpointPreviewPrefab;
-    [SerializeField] private Transform _threeCheckpointParent;  
-    
+    [SerializeField] private Transform _threeCheckpointParent;
+
+    [Header("Finish")]
+    [SerializeField] private FinishView _finishView;
+
     public override void InstallBindings()
     {
         bool isMobile = Application.isMobilePlatform || _isMobile;
@@ -126,5 +129,9 @@ public class GameplayInstaller : MonoInstaller
         Container.BindInstance(_threeCheckpointParent).WithId(ID_THREE_CHECKPOINT_PARENT);
         Container.BindInterfacesAndSelfTo<ThreeCheckpointPlacer>().AsSingle().NonLazy();
         Container.Bind<EffectCountersPanel>().FromComponentInHierarchy().AsSingle().NonLazy();
+
+        // --- Finish ---
+        Container.Bind<FinishView>().FromInstance(_finishView).AsSingle().NonLazy();
+        Container.Bind<FinishProcessor>().AsSingle().NonLazy();
     }
 }

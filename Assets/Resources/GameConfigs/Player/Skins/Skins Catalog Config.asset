@@ -18,23 +18,28 @@ MonoBehaviour:
     RewardedAdvId: default
     DisplayNameLocKey: skin.default
     PickupVisualPrefab: {fileID: 2071111318170553217, guid: 1b823f073e2d25847bdab99d1034a57c, type: 3}
+    SkinPortraitSprite: {fileID: 21300000, guid: a02d925dfd9292748aec3aded11d24ac, type: 3}
   - Id: 1
     ChildNameUnderPlayerModel: Knight
     RewardedAdvId: default
     DisplayNameLocKey: skin.knight
     PickupVisualPrefab: {fileID: 7564007067940620505, guid: 36494a4edaf7924489f309c8879b7eaf, type: 3}
+    SkinPortraitSprite: {fileID: 21300000, guid: 272d2d2b1dcd9a14aba7cb521b00d80f, type: 3}
   - Id: 2
     ChildNameUnderPlayerModel: PlagueDoctor
     RewardedAdvId: default
     DisplayNameLocKey: skin.plague_doctor
     PickupVisualPrefab: {fileID: 2660789801716298089, guid: 6966b1edb76014f4c946dfea3c1a7148, type: 3}
+    SkinPortraitSprite: {fileID: 21300000, guid: 2638c670a2fb7724ebab7362042331be, type: 3}
   - Id: 3
     ChildNameUnderPlayerModel: Ranger
     RewardedAdvId: default
     DisplayNameLocKey: skin.ranger
     PickupVisualPrefab: {fileID: 405966628637612529, guid: 435203ea950d9f542b5f516968fb0526, type: 3}
+    SkinPortraitSprite: {fileID: 21300000, guid: a02d925dfd9292748aec3aded11d24ac, type: 3}
   - Id: 4
     ChildNameUnderPlayerModel: Mage
     RewardedAdvId: default
     DisplayNameLocKey: skin.mage
     PickupVisualPrefab: {fileID: 4939471248026969489, guid: 8ed9256dd7b3a3d42b74048d8391178d, type: 3}
+    SkinPortraitSprite: {fileID: 21300000, guid: d26141dc1a7180545b78a68d6b5ef58e, type: 3}

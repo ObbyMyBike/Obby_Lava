@@ -2040,6 +2040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _botNameUI: {fileID: 1505811883810723601}
+  _skinsCatalogConfig: {fileID: 11400000, guid: 664f3413d58bc724cac6d0381df29feb, type: 2}
   _skins:
   - {fileID: 1729922465326974253}
   - {fileID: 1813756543197430112}

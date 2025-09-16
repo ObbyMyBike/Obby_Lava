@@ -21,6 +21,9 @@ public class BotInstaller : MonoInstaller
     [SerializeField] private int _preloadCount = 8;
     [SerializeField] private int _initialBotsCount = 5;
 
+    [Header("Progress")]
+    [SerializeField] private ProgressBar _progressBar;
+
     public override void InstallBindings()
     {
         Container.Bind<BotRespawnDirectory>().AsSingle();
@@ -34,5 +37,8 @@ public class BotInstaller : MonoInstaller
             _botPrefab, _botParent, _startSpawnPoint, preload, initial, _botConfigs, _waypointPaths, _spawnIntervalSeconds
                 
         }).NonLazy();
+
+        Container.Bind<ProgressBar>().FromInstance(_progressBar).AsSingle().NonLazy();
+        Container.BindInterfacesAndSelfTo<ProgressDisplayingProcessor>().AsSingle().NonLazy();
     }
 }

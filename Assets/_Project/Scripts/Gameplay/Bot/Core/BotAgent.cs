@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Zenject;
 
@@ -9,6 +10,7 @@ public class BotAgent : MonoBehaviour
     public event OnAgentDie OnDied;
 
     [SerializeField] private BotNameUI _botNameUI;
+    [SerializeField] private SkinsCatalogConfig _skinsCatalogConfig;
     [SerializeField] private List<GameObject> _skins;    
     
     private BotDataConfig _config;
@@ -24,6 +26,9 @@ public class BotAgent : MonoBehaviour
     private AnimationPlayback _animationPlayback;
 
     private int _uniqueSeed;
+    private SkinIdType _currentSkinId;
+
+    public SkinIdType CurrentSkinId => _currentSkinId;
 
     [Inject]
     public void Construct(int uniqueSeed, Transform startSpawnPoint,  BotRespawnDirectory respawnDirectory, BotDataConfig botDataConfig,
@@ -61,9 +66,11 @@ public class BotAgent : MonoBehaviour
 
     private void SetRandomSkin()
     {
-        int randIndex = Random.Range(0, _skins.Count);
+        int randIndex = Random.Range(0, _skinsCatalogConfig.Skins.Count);
+        var config = _skinsCatalogConfig.Skins[randIndex];
         _skins.ForEach(skin => skin.SetActive(false));
-        _skins[randIndex].SetActive(true);
+        _skins.First(skin => skin.gameObject.name == config.ChildNameUnderPlayerModel).SetActive(true);
+        _currentSkinId = config.Id;
     }
 
     private void OnEnable()
