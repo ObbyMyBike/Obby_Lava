@@ -28,6 +28,8 @@ public class BotAgent : MonoBehaviour
     private int _uniqueSeed;
     private SkinIdType _currentSkinId;
 
+    private bool _isPushed = false;
+
     public SkinIdType CurrentSkinId => _currentSkinId;
 
     [Inject]
@@ -60,6 +62,11 @@ public class BotAgent : MonoBehaviour
         _botNameUI.SetName(BotRandomNamesProvider.GetNextNickname());
     }
     
+    public void SetPushed(bool isPushed)
+    {
+        _isPushed = isPushed;
+    }
+
     public CharacterController Controller => _controller;
     public AnimationPlayback Animation => _animationPlayback;
     public BotHealth Health => _health;
@@ -90,7 +97,7 @@ public class BotAgent : MonoBehaviour
 
     private void Update()
     {
-        if (_ai == null)
+        if (_ai == null || _isPushed)
             return;
         
         _ai.Tick(Time.deltaTime);

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5090546569168458193}
   - component: {fileID: 6910490020791771333}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8550398555155248262}
   - component: {fileID: 1756904604304110285}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1916777239777095271}
   - component: {fileID: 3696085130705074538}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2176234020330512300}
   - component: {fileID: 8464951522881022512}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 4126233053519048090}
   - component: {fileID: 8128066535019954217}
   - component: {fileID: 2441655753943039971}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6229834136335964118}
   - component: {fileID: 5832367321281274477}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5227207682611437256}
   - component: {fileID: 3108742365411168398}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ReplicaContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7412108253599950565}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: PlagueDoctor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -704,7 +704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5536926612485849078}
   - component: {fileID: 3016928199375118138}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -796,7 +796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 421008112863184162}
   - component: {fileID: 4975667089506769014}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 4291856772709793768}
   - component: {fileID: 662718972957776448}
   - component: {fileID: 5738007948060220976}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ReplicaBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 564866354992369449}
   - component: {fileID: 8255002924821986916}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,7 +1052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4549325029477921882}
   - component: {fileID: 6787372138930902355}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1144,7 +1144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 670975554514241710}
   - component: {fileID: 7153776151441254581}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1235,7 +1235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5475660022679505585}
   - component: {fileID: 9159044940341741316}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5420085256518392677}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,7 +1358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4908753580610886271}
   - component: {fileID: 9049839398782471815}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1449,7 +1449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3813026488371899151}
   - component: {fileID: 1207781954578141573}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1540,7 +1540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5516536589299772338}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1579,7 +1579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8045641034104128124}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,7 +1619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1090798714823223386}
   - component: {fileID: 7730733011805280224}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1705,7 +1705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7923371496398713250}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1738,7 +1738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8848386716000583349}
   - component: {fileID: 3510084288397789911}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1829,7 +1829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 838252977659162919}
   - component: {fileID: 5090253406593264032}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1919,7 +1919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4442840954672903957}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1954,7 +1954,10 @@ GameObject:
   - component: {fileID: 6656456776192937394}
   - component: {fileID: 5229854508274864691}
   - component: {fileID: 6277217650328949542}
-  m_Layer: 9
+  - component: {fileID: 1810507387594202004}
+  - component: {fileID: 8293492004066907571}
+  - component: {fileID: 7601225540433843611}
+  m_Layer: 8
   m_Name: Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2047,6 +2050,71 @@ MonoBehaviour:
   - {fileID: 395281725966131871}
   - {fileID: 3715393376182047366}
   - {fileID: 5560690119370062929}
+--- !u!114 &1810507387594202004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071111318170553217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17a4e08176a4291ab944aec53069102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 8293492004066907571}
+  _characterController: {fileID: 5229854508274864691}
+  _botAgent: {fileID: 6277217650328949542}
+--- !u!54 &8293492004066907571
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071111318170553217}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!136 &7601225540433843611
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071111318170553217}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.7
+  m_Height: 2.6
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.31, z: 0}
 --- !u!1 &2115386099309732225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8802437191243566566}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2088,7 +2156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6968696632271406773}
   - component: {fileID: 2002658753281767180}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2190,7 +2258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3747111414089209932}
   - component: {fileID: 4910368073420736157}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2292,7 +2360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6885590624840549500}
   - component: {fileID: 2758322911184216409}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2382,7 +2450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7021018915200264637}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2414,7 +2482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1417092672497282139}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2446,7 +2514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7933299975968901638}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2479,7 +2547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3174833805374899046}
   - component: {fileID: 1572830572575163836}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2570,7 +2638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7955595855751944824}
   - component: {fileID: 2180144424231295869}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2661,7 +2729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 989136070151841314}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2694,7 +2762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 176641807596071876}
   - component: {fileID: 1384083538329947632}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2785,7 +2853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2874464745160192723}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2817,7 +2885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1643198331944865814}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2853,7 +2921,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1886043415295088101}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Mage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2892,7 +2960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8107454491875956358}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2925,7 +2993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6482023984264511896}
   - component: {fileID: 3868027862242269297}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3017,7 +3085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2421000233889033399}
   - component: {fileID: 8091496623789905694}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3108,7 +3176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6238318037769382479}
   - component: {fileID: 8049881970818881702}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: TrailEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3253,7 +3321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2272480447621736354}
   - component: {fileID: 6143894629675439493}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3339,7 +3407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6431952177688082352}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: PlayerRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3371,7 +3439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4483926557727979169}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3403,7 +3471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4399315678140366132}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3435,7 +3503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2798602299156448776}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3469,7 +3537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4557628406274264534}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3501,7 +3569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8977662446608395701}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3533,7 +3601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548424091257281508}
   - component: {fileID: 4265082921413239404}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3624,7 +3692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2706071930387837567}
   - component: {fileID: 1748748847514421527}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3715,7 +3783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2819245274708417345}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3747,7 +3815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3392945396999214760}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Ranger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3786,7 +3854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4872312123538134591}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3819,7 +3887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6706148143492220861}
   - component: {fileID: 213078895738880277}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3906,7 +3974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8534893434115895883}
   - component: {fileID: 3113178935293771537}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3992,7 +4060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3913434719993490701}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4024,7 +4092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5702591757529993321}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:HeadTop_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4059,7 +4127,7 @@ GameObject:
   - component: {fileID: 6190978598647869152}
   - component: {fileID: 1765593888733538789}
   - component: {fileID: 1505811883810723601}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: UpCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4174,7 +4242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2874237632483291479}
   - component: {fileID: 6217097955707245251}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4264,7 +4332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6121284992024587077}
   - component: {fileID: 7882730359283366251}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4354,7 +4422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3138645815239853735}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4389,7 +4457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334634956938410007}
   - component: {fileID: 54867012728599173}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4476,7 +4544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4933567520900161522}
   - component: {fileID: 1598709955661644827}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4578,7 +4646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4468276172410573206}
   - component: {fileID: 3549675499948939484}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4670,7 +4738,7 @@ GameObject:
   - component: {fileID: 962263197448505351}
   - component: {fileID: 2833581030241701237}
   - component: {fileID: 5043859050220667421}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ReplicaText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4803,7 +4871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8903301273838600285}
   - component: {fileID: 5533807281004735919}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4895,7 +4963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1688987117557103980}
   - component: {fileID: 2403585938184922940}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4986,7 +5054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2522071567807196138}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5018,7 +5086,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3446219279251598378}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5051,7 +5119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2792795381501881975}
   - component: {fileID: 1292542880748901348}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5140,7 +5208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7019798680098357392}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5172,7 +5240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3859578879949539882}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5204,7 +5272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5773644042067248018}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: mixamorig:RightToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5236,7 +5304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8312817179667252789}
   - component: {fileID: 9087667413052079103}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5338,7 +5406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7186449081191945362}
   - component: {fileID: 7348661998492158158}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5429,7 +5497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8735753966375060747}
   - component: {fileID: 7147135727429555652}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Kabose3h5
   m_TagString: Untagged
   m_Icon: {fileID: 0}

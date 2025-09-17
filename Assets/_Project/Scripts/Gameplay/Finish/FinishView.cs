@@ -42,5 +42,6 @@ public class FinishView : MonoBehaviour
 
         _finishUI.SetTimeText(timeText);
         _finishUI.Show();
+        Time.timeScale = 0f;
     }
 }
