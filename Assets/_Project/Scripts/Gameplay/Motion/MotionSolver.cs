@@ -81,6 +81,11 @@ public class MotionSolver
     
     public void AddVerticalVelocity(float deltaVelocityY) =>  _velocity.y += deltaVelocityY;
 
+    public void Bounce(float verticalImpulse)
+    {
+        _velocity.y = verticalImpulse;
+    }
+
     public void UpdateMovement(Vector3 moveDirection, float deltaTime)
     {
         Vector3 horizontalVelocity;

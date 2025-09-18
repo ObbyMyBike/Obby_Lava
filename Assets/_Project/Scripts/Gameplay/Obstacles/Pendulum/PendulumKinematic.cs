@@ -14,7 +14,7 @@ public class PendulumKinematic : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.isKinematic = true; // сами управляем движением
+        rb.isKinematic = true;
         startRot = transform.localRotation;
     }
 

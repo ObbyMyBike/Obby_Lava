@@ -49,6 +49,7 @@ public class Player : MonoBehaviour, IMoveDirectionProvider
     public PlayerTrailUsed Trail => _trail;
     public Vector3 CurrentMoveDirectionWorld => _currentMoveDirectionWorld;
     public PlayerDestructor Destructor => _destructor;
+    public MotionSolver Movement => _movement;
 
     Vector3 IMoveDirectionProvider.CurrentMoveDirectionWorld => CurrentMoveDirectionWorld;
 
